@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://expense-trac-backend.onrender.com/api/user", // your backend
+  baseURL: "https://expense-trac-backend.onrender.com/api/", // your backend
 });
 
 // Attach JWT token automatically

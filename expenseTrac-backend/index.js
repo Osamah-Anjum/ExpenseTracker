@@ -11,6 +11,8 @@ const app = express()
 //MIDDLEWARE
 app.use(cors({
   origin: "https://expensetracker-1-9w5i.onrender.com",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true
 }))
 app.use(express.json())

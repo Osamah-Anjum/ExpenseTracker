@@ -9,8 +9,10 @@ dotenv.config({override: true})
 const app = express()
 
 //MIDDLEWARE
-app.use(cors())
-app.options("*", cors());
+app.use(cors({
+  origin: "https://expensetracker-1-9w5i.onrender.com",
+  credentials: true
+}))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true}))
 
